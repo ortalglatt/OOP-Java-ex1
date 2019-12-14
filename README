@@ -1,0 +1,37 @@
+ortal.netzer
+
+
+=============================
+=      File description     =
+=============================
+Book.java - Contains the Book class. Each book has a name, author, year of publication and its comic, dramatic and
+            educational values. The methods in this class are mainly getters and setters.
+Patron.java - Contains the Patron class. Each patron has a first name, last name, his tendency to comic books, dramatic
+              books and to educational books, and an enjoyment threshold (the minimal score a book must get from the
+              patron, so he will enjoy from it).
+              The class contains methods of the patron - will he enjoy a book, what the score he will give to a book.
+Library.java - Contains the Library class. Each library has a maximum books capacity, maximum patrons capacity and
+               maximum books one patron can borrow on the same time.
+               The class contains method of the library - add books, register patrons, borrowing books by patrons and
+               more.
+
+
+=============================
+=          Design           =
+=============================
+I implemented the Library class, which is the main class of the exercise, in a way that it will be comfortable to use.
+I created an array of all the books in the library and an array of all the patrons that are registered to the library.
+The IDs of the patrons and the book, are the index they appear in the array, so it will be comfortable to get to them.
+
+
+=============================
+=  Implementation details   =
+=============================
+For the function that gives a patron book suggestion, I chose to go over the books array instead creating a new array of
+the number of books every patron is borrowing now. I did it because in the worst case, if the maximum patrons capacity
+is very big, the new array will take a big place of the memory.
+
+
+=============================
+=    Answers to questions   =
+=============================
